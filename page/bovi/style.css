@@ -1,0 +1,86 @@
+body {
+  background: #39374D;
+}
+.blip {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 16px;
+  width: 16px;
+  border: solid 2px #f1f1f2;
+  border-radius: 100%;
+}
+.blip:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 6px;
+  width: 6px;
+  background: #f1f1f2;
+  border-radius: 100%;
+  box-shadow: 0 0 14px 4px #f1f1f2;
+  -webkit-animation: beat 4s infinite;
+          animation: beat 4s infinite;
+}
+.sphere {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 4px;
+  width: 4px;
+  background: #f1f1f2;
+  border-radius: 100%;
+  box-shadow: 0 0 10px 4px #f1f1f2;
+  -webkit-animation: beat 1s infinite;
+          animation: beat 1s infinite;
+}
+@-webkit-keyframes beat {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.6);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+@keyframes beat {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.6);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+@-webkit-keyframes move {
+  0% {
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+  }
+  100% {
+    top: 40%;
+    left: 50%;
+    opacity: 0;
+  }
+}
+@keyframes move {
+  0% {
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+  }
+  100% {
+    top: 40%;
+    left: 50%;
+    opacity: 0;
+  }
+}

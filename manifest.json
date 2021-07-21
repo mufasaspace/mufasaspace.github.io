@@ -1,0 +1,17 @@
+{
+  "short_name": "Mufasa Space",
+  "name": "Mufasa Space",
+  "description": "Nós construímos referências!",
+  "icons": [
+    {
+      "src": "https://mufasa.space/img/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#efefef",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#39374d"
+}
