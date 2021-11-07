@@ -31,7 +31,7 @@ label {
 label input {
     font-family: "Josefin Sans", sans-serif;
     font-size: 1rem;
-    color: #7a7a7a56;
+    color: #cfcfcf;
     font-weight: bold;
     background: transparent;
     letter-spacing: 0.2em;
@@ -46,7 +46,7 @@ label input {
 }
 
 label input::selection {
-    background: #7a7a7a56;
+    background: #cfcfcf;
 }
 
 label p {
@@ -77,7 +77,7 @@ label input:not(:placeholder-shown) + p {
 }
 
 label input:placeholder-shown + p {
-    color: #7a7a7a56;
+    color: #cfcfcf;
 }
 
 button {
