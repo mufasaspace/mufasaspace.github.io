@@ -36,6 +36,26 @@
 
     <meta name='robots' content='index,follow' />
 
+    <script type='text/javascript'>
+        window.smartlook || (function(d) {
+            var o = smartlook = function() {
+                    o.api.push(arguments)
+                },
+                h = d.getElementsByTagName('head')[0];
+            var c = d.createElement('script');
+            o.api = new Array();
+            c.async = true;
+            c.type = 'text/javascript';
+            c.charset = 'utf-8';
+            c.src = 'https://web-sdk.smartlook.com/recorder.js';
+            h.appendChild(c);
+        })(document);
+        smartlook('init', '132ffc06945dbbafab6c79c8052571543e828c77', {
+            region: 'eu'
+        });
+
+    </script>
+
     <style id='kd-addon-style-inline-css' type='text/css'>
         navbar {
             font-family: Nunito !important;
@@ -998,7 +1018,7 @@
         .lower-footer span,
         .lower-footer a {
             font-weight: 400;
-            font-family:  "Nunito" !important;
+            font-family: "Nunito" !important;
         }
 
         .transparent-navigation .navbar.navbar-default.navbar-shrink .topbar-lang-switcher ul:not(:hover) li a,
@@ -1125,7 +1145,7 @@
         .footer_widget .wpml-ls-legacy-dropdown a,
         .footer_widget .wpml-ls-legacy-dropdown-click a {
             font-weight: 400;
-            font-family:  "Nunito" !important;
+            font-family: "Nunito" !important;
             font-size: 16px;
             line-height: 24px;
         }
@@ -1167,7 +1187,7 @@
         .content-area .vc_grid-item-mini .vc_gitem_row .vc_gitem-col h4 {
             color: #39374d;
             font-weight: 400;
-            font-family:  "Nunito" !important;
+            font-family: "Nunito" !important;
         }
 
         .vc_grid-item-mini .vc_custom_heading h5,
@@ -1175,7 +1195,7 @@
         .container h5 {
             color: #39374d;
             font-weight: 500;
-            font-family:  "Nunito" !important;
+            font-family: "Nunito" !important;
         }
 
         .container h6,
@@ -1205,7 +1225,7 @@
         body .navbar-default .nav li a,
         body .modal-menu-item {
             font-weight: 500;
-            font-family:  "Nunito" !important;
+            font-family: "Nunito" !important;
             font-size: 17px;
         }
 
@@ -1312,7 +1332,7 @@
         .pricing-table .tt_button,
         .pricing-table.active .tt_button {
             font-weight: 500;
-            font-family:  "Nunito" !important;
+            font-family: "Nunito" !important;
             font-size: 15px;
             line-height: 16px;
         }
@@ -1668,7 +1688,7 @@
         .container h4,
         .container h5,
         .navbar-nav .menu-item a {
-            font-family:  "Nunito" !important;
+            font-family: "Nunito" !important;
         }
 
         .container h1,
@@ -2581,7 +2601,8 @@
                         <ul class="redux-social-media-list clearfix">
                             <li><a target="_blank" href="https://facebook.com/mufasaspace/"><i class="fab fa-facebook"></i></a></li>
                             <li><a target="_blank" href="https://instagram.com/mufasaspace/"><i class="fab fa-instagram"></i></a></li>
-                            <li><a target="_blank" href="https://twitter.com/mufasaspace/"><i class="fab fa-twitter"></i></a></li><li><a target="_blank" href="https://pinterest.com/mufasaspace/"><i class="fab fa-pinterest"></i></a></li>
+                            <li><a target="_blank" href="https://twitter.com/mufasaspace/"><i class="fab fa-twitter"></i></a></li>
+                            <li><a target="_blank" href="https://pinterest.com/mufasaspace/"><i class="fab fa-pinterest"></i></a></li>
                             <li><a target="_blank" href="https://vimeo.com/mufasaspace/"><i class="fab fa-vimeo-v"></i></a></li>
                         </ul>
                     </div>
@@ -2809,7 +2830,8 @@
                                                         <div class="wpb_wrapper">
                                                             <div class="kd-title-label text-left no-primary-title   kd-animated fadeIn" data-animation-delay=200><span class="kd-title-label-transparent">Menos palavras — mais vídeos animados!</span></div>
                                                             <header class="kd-section-title col-lg-12 text-left  subtitle-below-title kd-animated fadeIn   vc_custom_1598010472129" data-animation-delay=200>
-                                                                <br><h3 class="separator_off" style="margin-bottom: 30px;">Nós o ajudaremos a ter ideias que você não sabia que poderia ter.</h3>
+                                                                <br>
+                                                                <h3 class="separator_off" style="margin-bottom: 30px;">Nós o ajudaremos a ter ideias que você não sabia que poderia ter.</h3>
                                                                 <h6 class="subtitle">Somos uma agência premiada com foco em animação e gráficos em movimento. Damos vida à estratégias e transformamos conceitos em conteúdo consumível.</h6>
                                                             </header>
                                                         </div>
@@ -3213,7 +3235,6 @@
                             <div class="menu-about-container">
                                 <ul id="menu-about" class="menu">
                                     <li class="menu-item menu-item-type-custom">Criatividade é importante. Só que criatividade sozinha não muda o mundo. Porque ideias, sem ação, não mudam o mundo. As ideias precisam ser implementadas. E o processo de implementação de ideias é a inovação. Podemos dizer que inovação é a criatividade emitindo nota fiscal. Criatividade + Empreendedorismo = Inovação. Quer mudar o mundo? Venha conosco!</li>
-                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -3370,9 +3391,6 @@
         </div>
     </div>
 
-
-
 </body>
-
 
 </html>
